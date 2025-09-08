@@ -1,0 +1,138 @@
+/* CSS ฟอร์ม */
+.upload-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.upload-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group input[type="file"] {
+    border: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn:active {
+    background-color: #004494;
+}
+
+
+/* nav */
+
+
+.profile {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .auth-buttons button {
+    margin-left: 10px;
+  }
+  
+  
+  
+  .dropdown {
+    float: right; /* กำหนดให้ dropdown อยู่ทางขวา */
+    position: relative; /* ทำให้ dropdown-content สามารถจัดตำแหน่งได้ */
+  }
+  
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: none;
+    z-index: 1;
+    width: 60px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; 
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;  
+  }
+  
+  
+  .Profile img{
+  width: 100%;
+  border-radius: 50%;
+  }
+  .Profile {
+    width: 50px;
+    border-radius: 50%;
+    }
+  
+  
+    .Link {
+      font: 1em sans-serif;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #f8f5f5;
+      text-decoration: none;
+    }
+
+.cut {
+  background: url("/linecut.gif");
+  height: 3px;
+  width: 100%;
+}
