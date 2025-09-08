@@ -4,15 +4,47 @@ import Image from "next/image";
 import Script from "next/script";
 import Secsion from "./components/secsions";
 
-const SITE = "https://myads.dev";
+const SITE = "https://www.myads.dev";
 
 export const metadata = {
   metadataBase: new URL(SITE),
-  title: "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
+  title:
+    "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
   description:
     "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา บริการทำโฆษณาออนไลน์ครบวงจร (Google Ads, Facebook Ads) วางกลยุทธ์ Setup แคมเปญ วัดผล และปรับแต่งเพื่อยอดขาย เริ่มต้นเพียง 9,900 บาท/เดือน",
   keywords: [
-  "การยิงแอด, Google, สายเทา, คอร์สเรียนGoogleAdsสายเทา, GoogleAdsสายเทา, สายเทา, บริการคอร์สเรียน, ยิงads, facebook, สายเทา, โฆษณา, ยิงads facebook สายเทา, รับยิงads, รับยิงแอด สายเทา, facebook ads, google ads, google, ads, สอนยิงแอด, สอนยิงแอด Conversion, สอนยิงแอดสายเทา, ยิงแอดสายเทา, ยิงโฆษณาสายเทา, รับทำ seo สายเทา, รับทำ seo สายดำ, แอดสายเทา, รับยิงแอดสายเทา, กูเกิ้ลแอดสายเทา, รับทํา google ads, สายเทา seo สายเทา, ตลาดสีเทา, แอดสีเทา, adsสีเทา, กราฟฟิกสายเทา, ยิงแอดเทา, รับยิงแอดfacebookสายเทา, รูปยิงแอดสายเทา, รับจ้างสายเทา, รับโฆษณาสายเทา ยิงads, facebook, สายเทา, โฆษณา, ยิงads facebook สายเทา, รับยิงads, รับยิงแอด สายเทา, facebook ads, google ads, google, ads, รับยิงแอด, รับทำโฆษณา, รับโฆษณา, Facebook, การตลาด, โฆษณาออนไลน์, เว็บไซต์, ตลาดเป้าหมาย, โฆษณาบนโซเชียลมีเดีย, Google Ads, การโฆษณาบน Facebook, การโฆษณาออนไลน์บนสื่อต่าง ๆ, การตลาดออนไลน์, การโปรโมท, โฆษณา Facebook, การโฆษณา Google, การโฆษณาสินค้า, การโฆษณาโปรโมชั่น, วิธีการโฆษณา, ความสำเร็จในการตลาด, บริการโฆษณา, การตลาดออนไลน์บน Facebook, การโฆษณาบนเว็บ, การวางแผนโฆษณา",
+    "การยิงแอด",
+    "Google",
+    "สายเทา",
+    "คอร์สเรียนGoogleAdsสายเทา",
+    "GoogleAdsสายเทา",
+    "บริการคอร์สเรียน",
+    "ยิงads",
+    "facebook",
+    "โฆษณา",
+    "ยิงads facebook สายเทา",
+    "รับยิงads",
+    "รับยิงแอด สายเทา",
+    "facebook ads",
+    "google ads",
+    "สอนยิงแอด",
+    "สอนยิงแอด Conversion",
+    "สอนยิงแอดสายเทา",
+    "ยิงโฆษณาสายเทา",
+    "รับทำ seo สายเทา",
+    "รับทำ seo สายดำ",
+    "แอดสายเทา",
+    "กูเกิ้ลแอดสายเทา",
+    "รับทํา google ads",
+    "ตลาดสีเทา",
+    "adsสีเทา",
+    "กราฟฟิกสายเทา",
+    "รับยิงแอดfacebookสายเทา",
+    "รูปยิงแอดสายเทา",
+    "รับโฆษณาสายเทา",
+    "โฆษณาออนไลน์",
+    "การตลาดออนไลน์",
+    "การวางแผนโฆษณา",
   ],
   alternates: {
     canonical: SITE,
@@ -30,17 +62,18 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
+    title:
+      "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
     description:
       "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา บริการยิงแอดมืออาชีพ ครบวงจร ตั้งค่า-วัดผล-สเกลยอดขาย มีรายงานโปร่งใส",
     url: SITE,
     siteName: "myads.dev",
     images: [
       {
-        url: `${SITE}/images/adsdev.jpg`,
-        width: 2000,
-        height: 1000,
-        alt: "บริการรับยิงแอด Facebook และ Google Ads โดย myads.dev",
+        url: `${SITE}/images/og.jpg`, // แนะนำไฟล์ 1200x630
+        width: 1200,
+        height: 630,
+        alt: "บริการยิงแอดโดย myads.dev",
       },
     ],
     type: "website",
@@ -48,9 +81,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
-    description: "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา ตั้งค่า-บริหารแคมเปญ อย่างมืออาชีพ พร้อมรายงานผลชัดเจน",
-    images: [`${SITE}/images/adsdev.jpg`],
+    title:
+      "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
+    description:
+      "รับจ้างยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา ตั้งค่า-บริหารแคมเปญ อย่างมืออาชีพ พร้อมรายงานผลชัดเจน",
+    images: [`${SITE}/images/og.jpg`], // 1200x630
   },
   verification: {
     google: "ryOmDGaWXKrwl4E9xiLHh2maGVlmpjzyFN8m9QfAyyM",
@@ -65,8 +100,13 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function Homepage() {
-  // --- JSON-LD for rich results & sitelinks friendliness ---
+  // Organization
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -88,12 +128,10 @@ export default function Homepage() {
         telephone: "+66832528058",
       },
     ],
-    sameAs: [
-      "https://lin.ee/vjeDuCZ"
-      // เพิ่มโปรไฟล์อื่น ๆ ที่เป็นทางการถ้ามี (Facebook page, YouTube, X)
-    ],
+    sameAs: ["https://lin.ee/vjeDuCZ"],
   };
 
+  // Website + sitelinks search
   const websiteSitelinksJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -107,7 +145,7 @@ export default function Homepage() {
     },
   };
 
-  // WebPage + primaryImageOfPage เพื่อช่วยให้แสดงรูปตัวอย่างในผลการค้นหา
+  // WebPage + primary image
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -118,15 +156,15 @@ export default function Homepage() {
     isPartOf: { "@id": `${SITE}/#website` },
     primaryImageOfPage: {
       "@type": "ImageObject",
-      url: `${SITE}/images/adsdev.jpg`,
-      width: 2000,
-      height: 1000,
+      url: `${SITE}/images/adsdev.jpg`, // รูปที่แสดงบนหน้า
+      width: 1200,
+      height: 630,
     },
     breadcrumb: { "@id": `${SITE}/#breadcrumb` },
     about: { "@id": `${SITE}/#organization` },
   };
 
-  // SiteNavigationElement (ช่วยความชัดเจนโครงสร้างลิงก์ เพื่อ sitelinks)
+  // Site navigation
   const navJsonLd = [
     {
       "@context": "https://schema.org",
@@ -166,10 +204,12 @@ export default function Homepage() {
     },
   ];
 
+  // Service
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "รับยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
+    serviceType:
+      "รับยิงแอดสายเทา ทำโฆษณาออนไลน์สายเทา Google&Facebook-Adsสายเทา",
     provider: { "@id": `${SITE}/#organization` },
     areaServed: "TH",
     description:
@@ -186,6 +226,7 @@ export default function Homepage() {
     },
   };
 
+  // Product (package)
   const productJsonLd = {
     "@context": "https://schema.org/",
     "@type": "Product",
@@ -204,6 +245,7 @@ export default function Homepage() {
     },
   };
 
+  // Breadcrumb
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -213,6 +255,7 @@ export default function Homepage() {
     ],
   };
 
+  // FAQ
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -259,24 +302,49 @@ export default function Homepage() {
       {/* LINE floating button */}
       <div
         className="line"
-        style={{ position: "fixed", right: 16, bottom: 16, zIndex: 50, filter: "drop-shadow(0 6px 16px rgba(0,0,0,.25))" }}
+        style={{
+          position: "fixed",
+          right: 16,
+          bottom: 16,
+          zIndex: 50,
+          filter: "drop-shadow(0 6px 16px rgba(0,0,0,.25))",
+        }}
       >
-        <a href="https://lin.ee/vjeDuCZ" aria-label="แชท LINE myads.dev" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://lin.ee/vjeDuCZ"
+          aria-label="แชท LINE myads.dev"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <Image src="/img/line.png" alt="LINE" width={56} height={56} priority />
         </a>
       </div>
 
+      {/* HERO */}
       <section className="container hero" style={{ paddingTop: 32 }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 24, alignItems: "center" }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.2fr 1fr",
+            gap: 24,
+            alignItems: "center",
+          }}
+        >
           <div>
-            <h1 style={{ margin: "0 0 12px" }}>บริการยิงแอด Google & Facebook Ads โดยทีมมืออาชีพ</h1>
+            <h1 style={{ margin: "0 0 12px" }}>
+              บริการยิงแอด Google & Facebook Ads โดยทีมมืออาชีพ
+            </h1>
             <p style={{ fontSize: "1.1rem", margin: "0 0 16px" }}>
               วางกลยุทธ์&nbsp;ตั้งค่าแคมเปญ&nbsp;วัดผลด้วยข้อมูลจริง&nbsp;สเกลยอดขายอย่างยั่งยืน
               แพ็กเกจเริ่มต้นเพียง <strong>9,900 บาท/เดือน</strong>
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <Link className="btn btn-primary" href="/contact">เริ่มคุยกับผู้เชี่ยวชาญ</Link>
-              <Link className="btn" href="/portfolio">ดูผลงานที่ผ่านมา</Link>
+              <Link className="btn btn-primary" href="/contact">
+                เริ่มคุยกับผู้เชี่ยวชาญ
+              </Link>
+              <Link className="btn" href="/portfolio">
+                ดูผลงานที่ผ่านมา
+              </Link>
             </div>
             <ul style={{ marginTop: 16, color: "#444" }}>
               <li>ตั้งค่า Conversion/Pixel + Conversion API ครบ</li>
@@ -288,9 +356,9 @@ export default function Homepage() {
           <div>
             <Image
               src="/images/adsdev.jpg"
-              alt="แดชบอร์ดโฆษณาและการวิเคราะห์ผลลัพธ์"
-              width={900}
-              height={450}
+              alt="ตัวอย่างผลลัพธ์โฆษณาและแดชบอร์ด โดย myads.dev"
+              width={1200}
+              height={630}
               priority
               style={{ width: "100%", height: "auto", borderRadius: 16 }}
             />
@@ -298,6 +366,7 @@ export default function Homepage() {
         </div>
       </section>
 
+      {/* QUICK NAV */}
       <nav className="container" aria-label="ลิงก์บริการยอดนิยม" style={{ marginTop: 24 }}>
         <div className="grid" style={{ gridTemplateColumns: "repeat(12, 1fr)", gap: 16 }}>
           {[
@@ -308,7 +377,12 @@ export default function Homepage() {
             { href: "/toolfree", title: "บริการฟรี sale Page สายเทา" },
             { href: "/video", title: "video สอนยิงแอดสายเทา" },
           ].map((item) => (
-            <Link key={item.href} href={item.href} className="card" style={{ gridColumn: "span 4", display: "block", textDecoration: "none" }}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className="card"
+              style={{ gridColumn: "span 4", display: "block", textDecoration: "none" }}
+            >
               <strong style={{ display: "block", marginBottom: 6 }}>{item.title}</strong>
               <span style={{ color: "#666" }}>คลิกเพื่อดูรายละเอียดบริการ</span>
             </Link>
@@ -316,9 +390,10 @@ export default function Homepage() {
         </div>
       </nav>
 
+      {/* WHY US */}
       <section className="container" style={{ marginTop: 24 }}>
         <h2>ทำไมธุรกิจถึงเลือก myads.dev</h2>
-        <div className="grid" style={{ gridTemplateColumns: "repeat(12, 1fr)" }}>
+        <div className="grid" style={{ gridTemplateColumns: "repeat(12, 1fr)", gap: 16 }}>
           <div className="card" style={{ gridColumn: "span 6" }}>
             <h3>กลยุทธ์ที่ขับเคลื่อนด้วยข้อมูล</h3>
             <p>ศึกษาคำค้นและพฤติกรรมเพื่อออกแบบข้อความ/ครีเอทีฟ ลด CPA เพิ่ม AOV</p>
@@ -338,6 +413,7 @@ export default function Homepage() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="container" style={{ marginTop: 12 }}>
         <h2>คำถามที่พบบ่อย</h2>
         <details className="card">
